@@ -1,12 +1,14 @@
 html, body{
     width: 100%;
     height: 100%;
-    font-family: 'Montserrat', sans-serif;
     color: rgb(78, 74, 74);
 }
 body{
     display: flex;
     flex-direction: column;
+}
+.header{
+    font-family: 'Montserrat', sans-serif;
 }
 .navbar{
     background-color: rgb(93, 199, 218);
@@ -37,6 +39,7 @@ footer{
     width: 100%;
     height: 75px;
     background-color: #9cd2eb;
+    font-family: 'Montserrat', sans-serif;
 }
 .footer{
     padding: 10px 15px;
@@ -55,11 +58,10 @@ footer{
     text-align: center;
     padding: 20px 0px 7px 0px;
 }
-
-/* //main-page */
 .content{
     flex-grow: 1;
     max-width: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 .content .row{
     margin: 0;
@@ -69,4 +71,34 @@ footer{
 .user{
     border-radius: 90px;
     background-color: #fff;
+}
+
+/* //main-page */
+.brandBanner{
+    height: 70px;
+}
+.banner{
+    width: 85%;
+    height: 95%;
+    margin: 0 auto;
+    background-color: coral;
+}
+.brandBannerMini{
+    height: 40%;
+}
+.bannerMini{
+    width: 95%;
+    height: 95%;
+    margin: 0 auto;
+    background-color: coral;
+
+}
+.badge{
+    font-size: 18px;
+}
+.vacancyArea{
+    font-family: 'Roboto', sans-serif;
+}
+.vacancyCard p{
+    font-size: 15px;
 }
