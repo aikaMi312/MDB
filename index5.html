@@ -19,10 +19,10 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
+  <div class="header">
     <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar">
       <a href="index.html" class="navbar-brand">JobOsh.kg</a>
-      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="
       #basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="
       Toggle Navigation">
         <span class="navbar-toggler-icon"></span>
@@ -37,24 +37,32 @@
           </li>
         </ul>
         <ul class="navbar-nav nav-flex-icons">          
-          <li class="nav-item">              
-            <a href="index5.html" class="nav-link waves-effect waves-dark">Кируу</a>
-          </li>
+            <li class="nav-item avatar dropdown">
+                <a class="nav-link user" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary"
+                    aria-labelledby="navbarDropdownMenuLink-55">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Настройки</a>
+                    <a class="dropdown-item" href="#">Выход</a>
+                </div>
+            </li>               
         </ul>
-      </div>         -->
+      </div>        
     </nav>
-  </header>
+  </div>
   <div class="content">
     <div class="row mt-5 pt-5">
       <div class="uLogin">
-        <div class="passwordReset">
-            <h4 class="mb-4" style="text-align: center;">Восстановление пароля.</h4>
-            <p>Мы отправили вам на почту (<span>email@gmail.com</span>) письмо с инструкцией для восстановления пароля.
-            <p>Если не получили письмо, проверьте папку СПАМ. Нажмите <a href="#">здесь</a>, для повтора процедуры восстановления пароля. </p>
-        </div>
-        <br>
+        <!-- Default form login -->
+        <form class="text-center p-5">
+          <h4 class="mb-4">Восстановление пароля.</h4>
+          <p class="my-5">Ваш пароль вновь восстановлен.</p>          
+        </form>
       </div>  
-    </div> 
+    </div>  
   </div>
   <footer class="mt-4">
     <div class="footer">
@@ -84,8 +92,6 @@
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
   <script type="text/javascript"></script>
-  <script src="js/main.js" defer></script>
 
 </body>
 </html>
-
