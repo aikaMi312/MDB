@@ -13,6 +13,12 @@ body{
 .navbar{
     background-color: rgb(93, 199, 218);
 }
+.home{
+    background-color: #fff;
+}
+.home .homepage{
+    font-weight: 400;
+}
 .navbar a{
     text-decoration: none;
     color: rgb(78, 74, 74);
@@ -112,4 +118,118 @@ footer{
 .message .card-img-top{
     width: 150px;
     margin: 0 auto;
+}
+
+/* //oshjob.html */
+.home .active{
+    color: rgb(68, 150, 167);
+}
+
+.homepageBanner{
+    width: 100%;
+    height: 95vh;
+    background: url(/img/scale_1200.webp) center / cover;
+}
+
+.navigator{
+    height: auto;
+    padding: 12vh 15vh 2vh 15vh;
+}
+
+.searchForm{
+    padding: 5px 15px;
+    position: unset;  
+    border-radius: 5px;  
+    background-color: rgba(93, 199, 218, 0.918);
+}
+.searchForm .formControl{
+    height: 70px; 
+    padding: 0px 2px; 
+    width: inherit;
+    /* border-radius: 3px; */
+    border: ivory;
+    background-color: #fff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.searchForm .formControl:focus{
+    outline: none;
+}
+.searchForm .col-md-6{
+    padding: 1vh;
+    position: unset;
+} 
+.searchForm .col-md-4{
+    padding: 1vh;
+    position: unset;
+} 
+.searchForm .col-md-2{
+    padding: 1vh;
+    position: unset;
+}
+.searchForm button:hover{
+    background-color: rgba(194, 229, 235, 0.918);
+}
+.rubrics-wrap{
+    padding: 0vh 15vh 2vh 15vh;
+    text-align: center;
+}
+.rubrics-innerpaddings{
+    background-color: rgba(238, 232, 232, 0.486);
+}
+.searchby .thin{
+    margin-right: 14px;
+}
+.rubrics-wrap .input-items{
+    display: inline-block;
+    margin: 5px 14px;
+    outline: none;
+}
+.rubrics-wrap .rubrics-search{
+    font-size: 16px;
+    color: rgba(54, 52, 52, 0.87);
+}
+
+.rubrics-container{
+    display: none;
+}
+
+.card-deck .card{
+    margin: 0 auto;
+}
+
+/* jobEmployer.html */
+.employersArea h4{
+    text-align: center;
+}
+.performers{
+    width: 100%;
+    align-content: stretch;
+    margin: 0px auto;
+}
+.card-bestPerformers{
+    padding: 20px 15px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25), 0 7px 7px rgba(0,0,0,0.22);
+    margin: 8px 12px;
+    width: 240px;    
+}
+.card-bestPerformers h5{
+    margin: 0px 0px 5px;
+}
+.card-bestPerformers p{
+    margin: 0px;
+}
+.perfCV{
+    margin: 12px;
+    height: 150px;
+    border-radius: 100%;
+    background: url(/img/unknownM.png) center / cover;
+    /* background: url(/img/unknownf.png) center / cover; */
+
+}
+.perfAbout{
+    padding: 0px 20px;
+    text-align: left;
+}
+.age{
+    padding-left: 15px;
 }
