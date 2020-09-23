@@ -56,41 +56,48 @@
       </div>
   </header>
   <div class="content">   
-        <div class="row mt-5 pt-5"> 
-            <div class="uLogin">   
-                <!-- Default form contact -->
-                <form class="text-center border border-light p-5" action="#!">
+    <div class="row mt-5 pt-5"> 
+      <div class="uLogin">   
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Добавить резюме</button>        
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <form class="text-center border border-light p-5" action="#!">
+                <p class="h4 mb-4">Добавить резюме</p>
+                <!-- Name -->
+                <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Имя и Фамилия">
+                <div class="itemsCV">
+                  <!-- Age -->
+                  <input type="text" id="defaultContactFormAge" class="form-control mb-4 formAge" placeholder="Возраст">
+                  <!-- Phone -->
+                  <input type="text" id="defaultContactFormText" class="form-control mb-4 formPhone" placeholder="Телефон (+996)">
+                </div>
+                <!-- Subject -->
+                <label>Категории</label>
+                <select class="browser-default custom-select mb-4">
+                    <option value="" selected>Выбрать</option>
+                    <option value="1">Сантехник</option>
+                    <option value="2">Электрик</option>
+                    <option value="3">Офицант</option>
+                    <option value="4">Продавец</option>
+                    <option value="4">Другое</option>
+                </select>
 
-                    <p class="h4 mb-4">Добавить резюме</p>
+                <!-- Message -->
+                <div class="form-group">
+                    <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="О себе и мои требования"></textarea>
+                </div>                    
 
-                    <!-- Name -->
-                    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Имя">
+                <!-- Send button -->
+                <button class="btn btn-info btn-block waves-effect" type="submit">Добавить мое резюме</button>
 
-                    <!-- Email -->
-                    <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
-
-                    <!-- Subject -->
-                    <label>Город проживания</label>
-                    <select class="browser-default custom-select mb-4">
-                        <option value="" disabled>Выбрать</option>
-                        <option value="1" selected>Ош</option>
-                        <option value="2">Жалалабад</option>
-                        <option value="3">Ноокат</option>
-                        <option value="4">Баткен</option>
-                    </select>
-
-                    <!-- Message -->
-                    <div class="form-group">
-                        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="О себе"></textarea>
-                    </div>                    
-
-                    <!-- Send button -->
-                    <button class="btn btn-info btn-block" type="submit">Отправить</button>
-
-                </form>
-                <!-- Default form contact -->
+              </form>
             </div>
-        </div>    
+          </div>
+        </div>             
+      </div>
+    </div>    
   </div>
   <footer class="mt-4">
     <div class="footer">

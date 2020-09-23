@@ -57,44 +57,67 @@
   </header>
   <div class="content">   
         <div class="row mt-5 pt-5"> 
-            <div class="uLogin">   
-                <div class="card">
-                    <h5 class="card-header info-color white-text text-center py-4">
-                        <strong>Добавить вакансию</strong>
-                    </h5>
-                    <div class="card-body px-lg-5 pt-0">
-                        <!-- Form -->
-                        <form class="text-center" style="color: #757575;" action="#!">
-                            <!-- Name -->
-                            <div class="md-form mt-3">
-                                <input type="text" id="materialContactFormName" class="form-control">
-                                <label for="materialContactFormName">Кто я</label>
-                            </div> 
-                            <div class="md-form mt-3">
-                                <input type="text" class="form-control">
-                                <label for="materialContactFormTitle">Тема:</label>
-                            </div>                          
+            <div class="uLogin">  
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Добавить вакансию</button>
+              
+              <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <form class="text-center border border-light p-5" action="#!">
+                      <p class="h4 mb-4">Добавить вакансию</p>
+                      <div class="md-form mt-3">
+                        <input type="text" id="defaultContactFormText" class="form-control">
+                        <label for="defaultContactFormText">Тема:</label>
+                      </div> 
+                      <!-- Name -->
+                      <div class="md-form mt-3">
+                          <input type="text" id="defaultContactFormText" class="form-control">
+                          <label for="defaultContactFormText">Место работы</label>
+                      </div> 
+                      <div class="md-form mt-3">
+                        <!-- Phone -->
+                        <label for="defaultContactFormText">Телефон (+996)</label>
+                        <input type="text" id="defaultContactFormText" class="form-control mb-4 formPhone">  
+                      </div>
+                      <label>Регион</label>
+                      <div class="md-form mt-3">
+                        <!-- Region -->
+                        <!-- <label>Регион</label> -->
+                        <select class="browser-default custom-select mb-2 smIn">
+                          <option value="" selected>Выбрать</option>
+                          <option value="1">Ош</option>
+                          <option value="2">Баткен</option>
+                          <option value="3">Джалалабад</option>
+                          <option value="4">Озгон</option>
+                          <option value="4">Карасуу</option>
+                        </select>  
+                      </div>  
+                      <label>Категории</label>                                      
+                      <div class="md-form mt-3">
+                        <!-- Subject -->
+                        <!-- <label>Категории</label> -->
+                        <select class="browser-default custom-select mb-2 smInCa">
+                            <option value="" selected>Выбрать</option>
+                            <option value="1">Сантехник</option>
+                            <option value="2">Электрик</option>
+                            <option value="3">Офицант</option>
+                            <option value="4">Продавец</option>
+                            <option value="4">Другое</option>
+                        </select>
+                      </div>            
+                      <!--Message-->
+                      <div class="md-form">
+                          <textarea id="defaultContactFormMessage" class="form-control md-textarea" rows="3"></textarea>
+                          <label for="defaultContactFormMessage">Описание вакансии</label>
+                      </div>                     
 
-                            <!--Message-->
-                            <div class="md-form">
-                                <textarea id="materialContactFormMessage" class="form-control md-textarea" rows="3"></textarea>
-                                <label for="materialContactFormMessage">Описание вакансии</label>
-                            </div>
-
-                            <div class="md-form mt-3">
-                                <input type="text" id="materialContactFormName" class="form-control">
-                                <label for="materialContactFormName">Вознаграждение (сом):</label>
-                            </div> 
-
-                            <!-- Send button -->
-                            <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit">Добавить вакансию</button>
-
-                        </form>
-                        <!-- Form -->
-
-                    </div>
-
+                      <!-- Send button -->
+                      <button class="btn btn-info btn-block waves-effect" type="submit">Добавить вакансию</button>
+                  </form>
+                  </div>
                 </div>
+              </div>
             </div>
         </div>    
   </div>
